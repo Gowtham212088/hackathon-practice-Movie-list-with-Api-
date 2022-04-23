@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+/* .App {
+ 
+} */
+
+.movie-container{
+width: 340px;
+background-color: rgba(255, 255, 255, 0.397);
+height:min-content ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.movie-poster{
+ width: 340px;
+  height: 500px;
+  /* object-fit: cover; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Movie-specs{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.movie-name{
+  font-size: 24px;
+  margin: 0px;
+}
+
+.movie-summary{
+  margin-top: 0px;
+}
+
+.movie-rating{
+ font-size: 18px;
+}
+
+.movie-list{
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.add-movie-form{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 10px;
+  margin: 16px;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+}
+
+.game-box{
+  height: 160px;
+  width: 160px;
+ border: 2px solid black;
+ font-size: 160px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
+.board{
+  display: flex;
+  flex-wrap: wrap;
+  width: 492px;
+}
+
+.full-game{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.not-found{
+  margin-top: 25px;
+display: flex;
+justify-content: center;
+height: 1000px;
+width: 100%;
+object-fit: cover;
+
 }
 
-.App-link {
-  color: #61dafb;
+.trailer-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 75px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+iframe{
+  width: 90%;
+  height: 850px;
+}
+
+.movie-spec{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+Link,a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
 }
